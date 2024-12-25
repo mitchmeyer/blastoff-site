@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 15 100% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 15 100% 58%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for react-big-calendar */
+.rbc-calendar {
+  @apply font-sans;
+}
+
+.rbc-header {
+  @apply py-2 font-semibold text-gray-700;
+}
+
+.rbc-event {
+  @apply bg-[#FF5C28] text-white rounded-md px-2 py-1;
+}
+
+.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-100;
+}
+
+.rbc-month-view, .rbc-time-view, .rbc-agenda-view {
+  @apply border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.rbc-toolbar button {
+  @apply text-gray-700 hover:bg-gray-100 px-3 py-1 rounded;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-[#FF5C28] text-white;
+}
+
+.min-h-screen {
+  position: relative;
+  z-index: 1;
+}
+
+main, header, footer {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure the popup transitions smoothly */
+.fixed {
+  transition: transform 0.3s ease-in-out;
+}
+

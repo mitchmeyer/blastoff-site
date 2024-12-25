@@ -91,3 +91,31 @@ Desktop.ini
 # Ignore the .env file
 .env
 node_modules
+
+# Next.js
+.next/
+out/
+build/
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# Testing
+/coverage
+
+# Debug
+npm-debug.log*
+.pnpm-debug.log*
+
+# Local env files
+.env*.local

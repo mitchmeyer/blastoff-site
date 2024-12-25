@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-react'
 import moment from 'moment'
-import PanelsSidebar from '../../components/PanelsSidebar'
+import PanelsSidebar from '@/components/PanelsSidebar'
 
 // Dynamically import the Calendar component
 const Calendar = dynamic(() => import('react-big-calendar').then((mod) => mod.Calendar), {

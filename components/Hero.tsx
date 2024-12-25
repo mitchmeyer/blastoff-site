@@ -38,9 +38,15 @@ export default function Hero() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
+              <Link 
+              target="_blank"
+              rel="noreferrer"
+              href="https://calendly.com/mitchellmeyer/blast-off-tutoring"
+              >
               <Button size="lg" variant="outline" className="text-lg text-[#FF5C28] border-[#FF5C28] hover:bg-[#FF5C28]/10 transition-all duration-300 ease-in-out transform hover:scale-105">
                 Book a call
               </Button>
+              </Link>
             </div>
             
             <p className="text-sm text-white/70 animate-fade-in-up animation-delay-800">

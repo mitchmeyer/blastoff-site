@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PanelsSidebar from '../../components/PanelsSidebar'
+import PanelsSidebar from '@/components/PanelsSidebar'
 import { Button } from '@/components/ui/button'
 
 export default function MyPanelsPage() {

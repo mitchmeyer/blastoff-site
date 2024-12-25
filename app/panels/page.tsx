@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Calendar, Clock, Home } from 'lucide-react'
-import PanelsSidebar from '../components/PanelsSidebar'
+import PanelsSidebar from '@/components/PanelsSidebar'
 
 interface Panel {
   id: number

@@ -6,12 +6,18 @@ const panels: Panel[] = [
     title: "UNC Student Panel",
     date: "2023-06-15",
     time: "19:00",
+    description: "A panel of UNC students will discuss their experiences and tips for success in college.",
+    link: "https://www.unc.edu",
+    imageUrl: "https://www.unc.edu/wp-content/uploads/2023/05/UNC-Logo.png",
   },
   {
     id: 2,
     title: "Navigating Life as a First-Generation College Student",
     date: "2023-06-22",
     time: "18:30",
+    description: "A panel of UNC students will discuss their experiences and tips for success in college.",
+    link: "https://www.unc.edu",
+    imageUrl: "https://www.unc.edu/wp-content/uploads/2023/05/UNC-Logo.png",
   },
   // Add more upcoming panel data as needed
 ]
